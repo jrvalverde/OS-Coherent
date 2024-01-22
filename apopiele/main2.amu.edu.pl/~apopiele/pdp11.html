@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-2">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 7  (Linux)">
+	<META NAME="CREATED" CONTENT="20060424;11560400">
+	<META NAME="CHANGEDBY" CONTENT="Andrzej Popielewicz">
+	<META NAME="CHANGED" CONTENT="20060426;22400300">
+	<STYLE>
+	<!--
+		P.text-body-indent { margin-left: 0.5cm }
+		P.text-body-indent { margin-left: 0.5cm }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="pl-PL" BGCOLOR="#ffffff" DIR="LTR">
+<H2>Andrzej Popielewicz Phd</H2>
+<P STYLE="margin-bottom: 0cm">Applied Informatics Division <BR>Institute
+of Physics UAM 
+</P>
+<HR>
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=2 BGCOLOR="#22e292">
+	<TR>
+		<TD>
+			<P><FONT SIZE=4><A HREF="http://www.staff.amu.edu.pl/~apopiele/download.html">Download</A>|<A HREF="http://www.staff.amu.edu.pl/~apopiele/contact.html">
+			Contact </A></FONT>
+			</P>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE WIDTH=1206 BORDER=0 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=2>
+	<COL WIDTH=10>
+	<COL WIDTH=61>
+	<COL WIDTH=6>
+	<COL WIDTH=5>
+	<COL WIDTH=2>
+	<COL WIDTH=10>
+	<COL WIDTH=1078>
+	<TR>
+		<TD ROWSPAN=7 WIDTH=2 VALIGN=TOP BGCOLOR="#00b8ff"></TD>
+		<TD ROWSPAN=6 WIDTH=10 VALIGN=TOP BGCOLOR="#00b8ff"></TD>
+		<TD WIDTH=61 VALIGN=TOP BGCOLOR="#00b8ff" SDVAL="1401" SDNUM="1045;">
+			<P ALIGN=RIGHT><A HREF="http://1401.org/">1401</A></P>
+		</TD>
+		<TD WIDTH=6 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=5 VALIGN=TOP BGCOLOR="#00b8ff"></TD>
+		<TD ROWSPAN=6 WIDTH=2 VALIGN=TOP BGCOLOR="#00b8ff"></TD>
+		<TD ROWSPAN=7 WIDTH=10 VALIGN=TOP BGCOLOR="#00b8ff"></TD>
+		<TD ROWSPAN=7 WIDTH=1078 VALIGN=TOP>
+			<H3><FONT SIZE=5>Using simh, pdp11 emulator under Coherent 4.2.x&nbsp;</FONT></H3>
+			<P><BR>&nbsp;<B>What You need</B></P>
+			<UL>
+				<LI><P STYLE="margin-bottom: 0cm">pdp11 binary <A HREF="http://www.staff.amu.edu.pl/~apopiele/pdp11.gz" NAME="Download">Download</A></P>
+				<LI><P>original pdp boot images , download it from
+				http://www.tuhs.org <A HREF="http://www.tuhs.org/">TUHS</A></P>
+			</UL>
+			<P CLASS="text-body-indent">Other emulators available : pdp1,
+			i1401(IBM computer from times of UNIVAC and von Neumann)</P>
+			<P CLASS="text-body-indent"><B>Installation /Running</B></P>
+			<UL>
+				<LI><P STYLE="margin-bottom: 0cm">copy pdp11 binary to /usr/bin 
+				</P>
+				<LI><P STYLE="margin-bottom: 0cm">create own directory for
+				example /pdp11</P>
+				<LI><P STYLE="margin-bottom: 0cm">cd /pdp11 
+				</P>
+				<LI><P STYLE="margin-bottom: 0cm">create emulator startup file
+				pdp11.start, details as above : http://www.tuhs.org 
+				</P>
+				<LI><P>type : pdp11 pdp11.start</P>
+				<LI><P>type few commands to boot the image : details as above</P>
+			</UL>
+			<P CLASS="text-body-indent"><B>Status/tested</B></P>
+			<UL>
+				<LI><P STYLE="margin-bottom: 0cm">Boot images tested: 
+				v7_rl02,v7_rk05,Ultrix-11 3.x,2.9BSD 
+				</P>
+				<LI><P>You can compile using cc or pcc</P>
+				<LI><P>most Unix commands work fine , even  vi etc 
+				</P>
+				<LI><P>how it compares to apout ? apout is a user level emulator,
+				it allows to run programs only. simh emulator allows to boot
+				original operating system</P>
+			</UL>
+			<P CLASS="text-body-indent"><B>Hints :</B></P>
+			<P CLASS="text-body-indent"><SPAN STYLE="font-weight: medium">1)CTRL/D
+			to switch to multiuser mode after booting image(after prompt #
+			appears)</SPAN></P>
+			<P CLASS="text-body-indent" STYLE="font-weight: medium">2)CTRL/E
+			to comeback to simulator(or how to leave the booted OS)</P>
+			<P CLASS="text-body-indent" STYLE="font-weight: medium">3)set cpu
+			3072K (use in Ultrix-11 startup file), if message &ldquo;too big&rdquo;
+			is produced</P>
+			<P CLASS="text-body-indent" STYLE="font-weight: medium">4)if login
+			in multiuser state fails , reboot and change password of root
+			using passwd in single user mode) and then CTRL/D 
+			</P>
+			<P CLASS="text-body-indent" STYLE="font-weight: medium">5)if
+			visual problems with vi in Ultrix , start emulator in xterm</P>
+			<P CLASS="text-body-indent"><BR><BR>
+			</P>
+			<P CLASS="text-body-indent"><B>License : non-commercial use only </B>
+			</P>
+			<P CLASS="text-body-indent"><B>Author </B>:</P>
+			<P STYLE="margin-left: 1.06cm">Bob Supnik <BR>&nbsp;&nbsp;&nbsp; 
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=61 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=6 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=5 VALIGN=TOP BGCOLOR="#00b8ff"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=61 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=6 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=5 VALIGN=TOP BGCOLOR="#00b8ff"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=61 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=6 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=5 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=61 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=6 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=5 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=61 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=6 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=5 BGCOLOR="#00b8ff">
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5 WIDTH=100 BGCOLOR="#00b8ff"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=7 WIDTH=120>
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=1078>
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+</TABLE>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>

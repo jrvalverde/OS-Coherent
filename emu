@@ -1,0 +1,1 @@
+qemu -fda disk1.4.10.dd -fdb disk2.4.10.dd -hda coherent.dsk &

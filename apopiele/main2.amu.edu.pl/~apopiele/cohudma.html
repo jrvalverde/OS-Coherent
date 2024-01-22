@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-2">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 7  (Linux)">
+	<META NAME="CREATED" CONTENT="20060403;20421800">
+	<META NAME="CHANGEDBY" CONTENT="Andrzej Popielewicz">
+	<META NAME="CHANGED" CONTENT="20070827;10312800">
+	<STYLE>
+	<!--
+		@page { size: 21.59cm 27.94cm }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="pl-PL" BGCOLOR="#ffffff" DIR="LTR">
+<H2>Andrzej Popielewicz Phd</H2>
+<P STYLE="margin-bottom: 0cm">Applied Informatics Division <BR>Institute
+of Physics UAM 
+</P>
+<TABLE WIDTH=100% BORDER=0 CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=54*>
+	<COL WIDTH=6*>
+	<COL WIDTH=195*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TD WIDTH=21% BGCOLOR="#23ff23">
+				<P><FONT SIZE=4><A HREF="http://www.staff.amu.edu.pl/~apopiele/download.html">Download</A>|<A HREF="http://www.staff.amu.edu.pl/~apopiele/contact.html">
+				Contact </A></FONT>
+				</P>
+			</TD>
+			<TH WIDTH=2% BGCOLOR="#23ff23">
+				<P><BR>
+				</P>
+			</TH>
+			<TH WIDTH=76% BGCOLOR="#23ff23">
+				<P><BR>
+				</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=21% BGCOLOR="#0099ff">
+				<P><A HREF="http://www.staff.amu.edu.pl/~apopiele/cv.html"><FONT SIZE=4>CV</FONT></A></P>
+				<P><A HREF="http://www.staff.amu.edu.pl/~apopiele/interests.html">Interests</A></P>
+				<P><A HREF="http://www.staff.amu.edu.pl/~apopiele/projects.html">projects</A></P>
+				<P><A HREF="http://www.port80h.com.pl/index.php">CompactFlash+IDE
+				</A>
+				</P>
+				<P><A HREF="http://www.ansi.org/">ANSI</A></P>
+			</TD>
+			<TD WIDTH=2%>
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=76%>
+				<H3>(U)DMA at driver for Coherent 4.2.x</H3>
+				<H3><I><B>After July the 20<SUP>th</SUP> 2007</B></I></H3>
+				<P STYLE="font-weight: medium">After many theoretical
+				preparations I decided to write this driver.</P>
+				<P STYLE="font-weight: medium">Features:</P>
+				<UL>
+					<LI><P>Based on Intel PCI BM IDE specification (coming from 1994
+					, thanks Brad) 
+					</P>
+					<LI><P>I have ANSI ATA/ATAPI-6 specification <A HREF="zrzutekranu3.png">Licensed</A></P>
+					<LI><P STYLE="font-weight: medium">Support for SIS5513 (tested
+					SIS 735 bridge), ATA-100 IDE controller</P>
+					<LI><P>Support for VIA VT82C58x PCI IDE controller</P>
+					<LI><P STYLE="font-weight: medium">Tested on Duron 1300 MHZ,
+					SIS5513, K7xxxx ECS motherboard</P>
+					<LI><P STYLE="font-weight: medium">Tested with UDMA-5 80 GB HD
+					slave , UDMA-5 speed used</P>
+					<LI><P STYLE="font-weight: medium">Switch DMA-&gt;PIO capability
+					in case of DMA errors/timeouts. Driver tries to comeback to DMA
+					mode if possible</P>
+					<LI><P STYLE="font-weight: medium">First succesful DMA
+					read/write on 15.8.2007(Anniversary Day of Wonder over
+					Vistula(Wisła))</P>
+					<LI><P STYLE="font-weight: medium">Author and copyright :
+					Andrzej Popielewicz</P>
+				</UL>
+				<P><BR><BR>
+				</P>
+				<P STYLE="font-weight: medium">Status : 22.8.2007</P>
+				<P><BR><BR>
+				</P>
+				<UL>
+					<LI><P STYLE="font-weight: medium">Works with SIS5513(ISA bridge
+					SIS735) , final trick invented in bed during morning on
+					22.8.2007 
+					</P>
+					<LI><P STYLE="font-weight: medium">Boots OK to multiuser mode</P>
+					<LI><P STYLE="font-weight: medium">Usable, but requires of
+					course a lot of testing</P>
+					<LI><P STYLE="font-weight: medium">Further optimizations planned
+										</P>
+					<LI><P STYLE="font-weight: medium">Primitive benchmark , reading
+					of a 170 MB file, shows that UDMA driver is about 3 times faster
+					than in PIO 4 but one can await more, stay tuned .Well , not
+					only is IO faster, but Your CPU has more air too. 
+					</P>
+				</UL>
+				<P><BR><BR>
+				</P>
+				<P STYLE="font-weight: medium">Status upgrade : 25.8.2007</P>
+				<P><BR><BR>
+				</P>
+				<UL>
+					<LI><P STYLE="font-weight: medium">Stable 
+					</P>
+					<LI><P STYLE="font-weight: medium">all standard programs work
+					fine , like bash, mc, vsh , elvis , cp, cc, rm etc</P>
+					<LI><P STYLE="font-weight: medium">fsck works , very important</P>
+					<LI><P>Bonnie IO benchmark works(uses 100 MB file), shows that
+					reading is about 3-4.5 times faster than with LBA driver in
+					PIO(LBA driver in PIO is faster than original driver in PIO),
+					writing about 2 times faster . It suggests there is a general
+					problem with writing, perhaps this difference results from
+					design.One could await speedup in Xfree(loading of big
+					binaries).Database search will also be much faster . <A HREF="bonnie.gz">Bonnie</A></P>
+					<LI><P STYLE="font-weight: medium">networking (lynx) works and
+					is noticeably faster</P>
+				</UL>
+				<P STYLE="font-weight: medium"><BR><BR>
+				</P>
+				<P STYLE="font-weight: medium">Status upgrade : 27.8.2007</P>
+				<UL>
+					<LI><P STYLE="font-weight: medium">works on VIA VT82C58x ,
+					system with K6 300 MHZ, VIA motherboard VA-503, Coherent on
+					master/slave  8/10 GB IDE disks(BIOS sees as UDMA-5 disks),
+					controller supports up to 33 MB/s</P>
+					<LI><P STYLE="font-weight: medium">speedup on VT82C58x is not so
+					noticeable like with SIS5513, but for large files one observes
+					2-3 times faster reading than with original driver (measured
+					with Bonnie)</P>
+					<LI><P STYLE="font-weight: medium">XFree 4.4 works fine with new
+					driver (tested on VIA system only)  
+					</P>
+				</UL>
+				<P><BR><BR>
+				</P>
+				<P STYLE="font-weight: medium">Planned</P>
+				<UL>
+					<LI><P STYLE="font-weight: medium">support for Intel PIIX ?</P>
+					<LI><P STYLE="font-weight: medium">hdparm ? Or comparable line
+					command 
+					</P>
+					<LI><P STYLE="font-weight: medium">optimizations</P>
+					<LI><P STYLE="font-weight: medium">ATAPI (CD, DVD etc) ? It
+					would be nice to have cdrecord working in Coherent.</P>
+				</UL>
+				<P><BR><BR>
+				</P>
+				<P><B>References</B></P>
+				<P>&ldquo;<I>SCSI-Bus und IDE Schnittstelle&rdquo;</I> by
+				Fridhelm Schmidt, Addison Wesley 1998 Bonn, I have Polish edition
+				of it by MIKOM in 1999</P>
+				<P><BR><BR>
+				</P>
+				<H3><BR><BR>
+				</H3>
+				<H3><BR>
+				</H3>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=21% BGCOLOR="#0099ff">
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=2%>
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=76%></TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=21% BGCOLOR="#0099ff">
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=2%>
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=76%></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>

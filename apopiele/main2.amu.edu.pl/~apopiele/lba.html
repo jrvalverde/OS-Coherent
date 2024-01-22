@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-2">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 7  (Linux)">
+	<META NAME="CREATED" CONTENT="20060403;20421800">
+	<META NAME="CHANGEDBY" CONTENT="Andrzej Popielewicz">
+	<META NAME="CHANGED" CONTENT="20070827;11030600">
+	<STYLE>
+	<!--
+		@page { size: 21.59cm 27.94cm }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="pl-PL" BGCOLOR="#ffffff" DIR="LTR">
+<H2>Andrzej Popielewicz Phd</H2>
+<P STYLE="margin-bottom: 0cm">Applied Informatics Division <BR>Institute
+of Physics UAM 
+</P>
+<TABLE WIDTH=100% BORDER=0 CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=54*>
+	<COL WIDTH=6*>
+	<COL WIDTH=195*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TD WIDTH=21% BGCOLOR="#23ff23">
+				<P><FONT SIZE=4><A HREF="http://www.staff.amu.edu.pl/~apopiele/download.html">Download</A>|<A HREF="http://www.staff.amu.edu.pl/~apopiele/contact.html">
+				Contact </A></FONT>
+				</P>
+			</TD>
+			<TH WIDTH=2% BGCOLOR="#23ff23">
+				<P><BR>
+				</P>
+			</TH>
+			<TH WIDTH=76% BGCOLOR="#23ff23">
+				<P><BR>
+				</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=21% BGCOLOR="#0099ff">
+				<P><A HREF="http://www.staff.amu.edu.pl/~apopiele/cv.html"><FONT SIZE=4>CV</FONT></A></P>
+				<P><A HREF="http://www.staff.amu.edu.pl/~apopiele/interests.html">Interests</A></P>
+				<P><A HREF="http://www.staff.amu.edu.pl/~apopiele/projects.html">projects</A></P>
+				<P><A HREF="http://www.port80h.com.pl/index.php">CompactFlash+IDE
+				</A>
+				</P>
+			</TD>
+			<TD WIDTH=2%>
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=76%>
+				<H3>New at driver for Coherent 4.2.10</H3>
+				<H3 STYLE="font-weight: medium">17.4.2007</H3>
+				<P STYLE="font-weight: medium">New at driver for IDE HD drives
+				implemented</P>
+				<P STYLE="font-weight: medium">Features:</P>
+				<UL>
+					<LI><P>LBA support, drives up to 120 GB possible (so called 28
+					bit LBA, 137 GB)</P>
+					<LI><P STYLE="font-weight: medium">new data structures used</P>
+					<LI><P STYLE="font-weight: medium">works only in LBA mode</P>
+					<LI><P STYLE="font-weight: medium">tested with 80 GB WD IDE
+					harddrive with 8 MB cache</P>
+					<LI><P STYLE="font-weight: medium">new cfdisk</P>
+					<LI><P STYLE="font-weight: medium">A few 4 GB Coherent
+					partitions created 
+					</P>
+					<LI><P STYLE="font-weight: medium">was tested in 1.7 GB
+					master(Coherent) + 80 GB slave(Coherent plus other partitions)
+					configuration</P>
+					<LI><P STYLE="font-weight: medium">tested for 2 months and seems
+					rock stable in K6 300 MHZ system, but not rock stable in Duron
+					1300 MHZ system yet.Perfect for development of better versions
+					in both cases.In any case we do not use old at non-lba driver
+					anymore</P>
+					<LI><P STYLE="font-weight: medium">80 GB drive tested on Duron
+					1300 MHZ system, default setting of BIOS</P>
+					<LI><P STYLE="font-weight: medium">tested also in 80GB
+					primary(Linux,Solaris10/9) and 80 GB slave(Coherent and other),
+					it means You can boot Coherent from slave drive .It suggests,
+					that one can boot Coherent from primary 80 GB disk too.</P>
+					<LI><P STYLE="font-weight: medium">tested on K6 300 MHZ system,
+					with 8 GB master(Coherent) + 10 GB slave(Coherent), default
+					setting of BIOS</P>
+					<LI><P STYLE="font-weight: medium">Does not require any other
+					changes in 4.2.10 kernel(if I did not forget something ?)</P>
+					<LI><P STYLE="font-weight: medium">Should allow to boot Coherent
+					on any modern PC(even P4)/laptop with PATA(PCI Express vga is a
+					question!!)</P>
+					<LI><P STYLE="font-weight: medium">Will it work with SATA ?
+					Rather not(?). One could try to use SATA/PATA cable to connect
+					PATA drive to SATA controller.Although old SATA specification
+					says something about software compatibility with ATA drivers
+					(?)(perhaps only for 150MB/s SATA ?).</P>
+					<LI><P STYLE="font-weight: medium">How to install on laptop
+					without floppy ? Use PC IDE-laptop IDE adapter and install
+					Coherent on laptop drive connected to PC IDE interface as a
+					slave. Or use <B>bootit/image/copywipe</B> partition CD/DVD
+					images created on PC ?</P>
+					<LI><P>UDMA support .<A HREF="cohudma.html">More
+					about UDMA</A></P>
+					<LI><P STYLE="font-weight: medium">Question : What about using
+					<B>bootit</B> program to boot Coherent in multiboot
+					configuration ??</P>
+					<LI><P STYLE="font-weight: medium">Kernel development
+					environment works fine in the new system(ddk,idmkcoh,idbld etc)
+					for K6 300 MHZ ,it means one can switch completely to the new
+					system , the development of kernel for Duron 1300 MHZ is done at
+					the moment on K6 system, but it should change soon. 
+					</P>
+					<LI><P STYLE="font-weight: medium">Some programs have (sometimes
+					fixable) problems in Duron system, but we do not know if it is
+					caused by the new at driver(?). 
+					</P>
+					<LI><P STYLE="font-weight: medium">Planned : 48 bit LBA</P>
+					<LI><P STYLE="font-weight: medium">Author and Copyright :
+					Andrzej Popielewicz</P>
+				</UL>
+				<P><BR><BR>
+				</P>
+				<H3><I>Fix for hai SCSI driver</I></H3>
+				<P>March 2007</P>
+				<UL>
+					<LI><P>Simple fix of hai SCSI driver from 4.2.10, which allows
+					to use external HP SureStore Tape 6000 streamer.Really a very
+					reliable streamer(4-8 GB DDS2).</P>
+				</UL>
+				<H3><BR><BR>
+				</H3>
+				<H3><BR>
+				</H3>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=21% BGCOLOR="#0099ff">
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=2%>
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=76%></TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=21% BGCOLOR="#0099ff">
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=2%>
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=76%></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>
